@@ -237,6 +237,6 @@ If you found this project useful or inspiring:
 
 ---
 
-**_Thank you for checking out my Weather App!_**
+**_Thank you so much for checking out my Weather App!_**
 
 ---
