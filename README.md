@@ -36,7 +36,7 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 - **Data Export:**  
   Export your search history or saved records to **JSON**, **CSV**, **XML**, or **PDF** formats with one click. Great for data portability, analytics, and reporting.
 
-- **API Integrations (Optional):**  
+- **API Integrations:**  
   - **YouTube:** Watch trending videos about your searched location.
   - **Google Maps:** Visualize searched locations on the map.
 
