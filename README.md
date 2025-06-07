@@ -80,25 +80,48 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 
 ```
 weather-app/
-├── app.py
-├── models.py
-├── routes/
-│   ├── weather.py
-│   ├── records.py
-│   └── export.py
+│
+├── .env
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── run.py
+├── test.py
+│
+├── app/
+│   ├── air_quality.py
+│   ├── export.py
+│   ├── forms.py
+│   ├── geocode.py
+│   ├── maps_api.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── utils.py
+│   ├── weather_api.py
+│   ├── youtube_api.py
+│   └── __init__.py
+│
+├── instance/
+│   └── weather_app.db
+│
 ├── static/
 │   ├── style.css
-│   └── icons/
+│   ├── css/
+│   ├── img/
+│   └── js/
+│
 ├── templates/
 │   ├── base.html
+│   ├── create.html
+│   ├── edit.html
+│   ├── history.html
 │   ├── index.html
-│   ├── records.html
 │   ├── info.html
-│   └── ...
-├── requirements.txt
-├── .env.example
-├── README.md
-└── ...
+│   ├── list.html
+│   ├── view.html
+│   └── weather.html
+│
+└── __pycache__/
 ```
 
 ---
