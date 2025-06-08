@@ -201,7 +201,7 @@ flask run
 | API integration (YouTube, Maps)      | ✅           | YouTube and Google Maps                  |
 | Info button (PMA description)        | ✅           | Linked to PMA LinkedIn                   |
 | Error handling & validation          | ✅           | All user input & API errors handled      |
-| Demo video                           | ➡️           | [Add your demo video link below]         |
+| Demo video                           | ✅          | [Demo video link](https://vimeo.com/1091594885/d1d869631a?share=copy)         |
 
 ---
 
@@ -209,7 +209,7 @@ flask run
 
 > _Embed your screencast or YouTube demo link below for reviewers and LinkedIn viewers:_
 >
-> [![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://your-demo-link.com)
+> 📹 [Watch Demo on Vimeo](https://vimeo.com/1091594885/d1d869631a?share=copy)
 
 ---
 
