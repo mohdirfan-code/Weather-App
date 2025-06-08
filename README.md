@@ -74,13 +74,13 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 ## 🖼️ App Screenshots
 
 > _Paste your working app images or GIFs here for maximum engagement!_
->
-> ![Home Page](![Image](https://github.com/user-attachments/assets/1afa06b3-a0bc-4320-9742-5017848e07f8))
-> ![Search Result](![Image](https://github.com/user-attachments/assets/ea56b5c4-7996-48ae-aea4-b5bc1ed714ab))
-> ![Air Quality](![Image](https://github.com/user-attachments/assets/217982ea-1937-46c0-8307-37c11ef67288))
-> ![Google Location & Youtube Videos](![Image](https://github.com/user-attachments/assets/3c2c1985-66f8-4a0c-b31f-c179b2687c83))
-> ![Records (CRUD)](![Image](https://github.com/user-attachments/assets/f1a9c705-03a4-4845-8f86-41c474d80be1))
-> ![Info Page](![Image](https://github.com/user-attachments/assets/e9c7d5f1-2d7e-4c34-ab76-221c0c538d36))
+
+![Home Page](https://github.com/user-attachments/assets/1afa06b3-a0bc-4320-9742-5017848e07f8)
+![Search Result](https://github.com/user-attachments/assets/ea56b5c4-7996-48ae-aea4-b5bc1ed714ab)
+![Air Quality](https://github.com/user-attachments/assets/217982ea-1937-46c0-8307-37c11ef67288)
+![Google Location & Youtube Videos](https://github.com/user-attachments/assets/3c2c1985-66f8-4a0c-b31f-c179b2687c83)
+![Records (CRUD)](https://github.com/user-attachments/assets/f1a9c705-03a4-4845-8f86-41c474d80be1)
+![Info Page](https://github.com/user-attachments/assets/e9c7d5f1-2d7e-4c34-ab76-221c0c538d36)
 ---
 
 ## 🏗️ Project Structure
@@ -201,7 +201,7 @@ flask run
 | API integration (YouTube, Maps)      | ✅           | YouTube and Google Maps                  |
 | Info button (PMA description)        | ✅           | Linked to PMA LinkedIn                   |
 | Error handling & validation          | ✅           | All user input & API errors handled      |
-| Demo video                           | ✅          | [Demo video link](https://vimeo.com/1091594885/d1d869631a?share=copy)         |
+| Demo video                           | ✅          | [Demo video link](https://vimeo.com/1091614971/790150541a?share=copy)         |
 
 ---
 
@@ -209,7 +209,7 @@ flask run
 
 > _Embed your screencast or YouTube demo link below for reviewers and LinkedIn viewers:_
 >
-> 📹 [Watch Demo on Vimeo](https://vimeo.com/1091594885/d1d869631a?share=copy)
+> 📹 [Watch Demo on Vimeo](https://vimeo.com/1091614971/790150541a?share=copy)
 
 ---
 
