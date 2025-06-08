@@ -5,3 +5,4 @@ python-dotenv>=1.0
 Flask-SQLAlchemy
 reportlab>=4.0
 markdown
+gunicorn
