@@ -1,0 +1,126 @@
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    margin: 30px; 
+    background: linear-gradient(-45deg, #0f2027, #2c5364, #f7971e, #ffd200, #21d4fd, #b721ff, #ff6a00);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+.container { 
+    max-width: 700px; 
+    margin: 0 auto; 
+    background: #fff; 
+    padding: 1.8em 2.2em; 
+    border-radius: 16px; 
+    box-shadow: 0 8px 32px #0003;
+}
+nav { margin-bottom: 1.5em; }
+.btn { 
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 6px; 
+    background: linear-gradient(90deg, #4099e0 60%, #21d4fd 100%);
+    color: #fff; 
+    cursor: pointer; 
+    font-weight: 600;
+    box-shadow: 0 3px 8px #4099e033;
+    transition: background 0.2s, transform 0.1s;
+}
+.btn.main-btn { background: linear-gradient(90deg, #21d4fd 60%, #b721ff 100%);}
+.btn.danger-btn { background: linear-gradient(90deg, #e05a47 60%, #ffd200 100%);}
+.btn:hover { background: linear-gradient(90deg, #21d4fd 60%, #4099e0 100%); transform: translateY(-2px) scale(1.04);}
+.flashes { list-style: none; padding: 0; }
+.flash.success { color: green; }
+.flash.danger { color: red; }
+table { width: 100%; border-collapse: separate; border-spacing: 0;}
+th, td { padding: 10px 8px; }
+
+/* For cards and forms in CRUD pages */
+.crud-card, .crud-form, .crud-table {
+    background: linear-gradient(100deg, #dbeafe 70%, #e6f7d2 100%);
+    border-radius: 18px;
+    padding: 28px 36px 25px 36px;
+    box-shadow: 0 8px 36px #0001;
+    margin-bottom: 24px;
+}
+.crud-form label {
+    font-weight: 600;
+    color: #2e4a62;
+    display: block;
+    margin: 12px 0 4px 0;
+}
+.crud-form input[type="text"], .crud-form input[type="date"] {
+    padding: 9px 12px;
+    border: 1.5px solid #b721ff;
+    border-radius: 6px;
+    background: #fafdff;
+    font-size: 1.07em;
+    margin-bottom: 14px;
+    width: 96%;
+    display: block;
+}
+.crud-form button, .crud-form a.btn {
+    margin-top: 14px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+}
+.crud-table {
+    margin-top: 20px;
+    background: #fff9;
+}
+.crud-table th, .crud-table td {
+    padding: 13px 15px;
+    border-bottom: 1.5px solid #b721ff22;
+    font-size: 1.03em;
+}
+.crud-table th {
+    background: #21d4fd33;
+    color: #2e4a62;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.crud-table tr:nth-child(even) {
+    background: #fff7;
+}
+.crud-table tr:hover {
+    background: #ffd2002a;
+    transition: background 0.17s;
+}
+.crud-table td form {
+    display:inline;
+}
+
+.weather-card, .forecast-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #21d4fd22;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    display: inline-block;
+    min-width: 180px;
+}
+.weather-card h3, .forecast-card h3 { margin-top: 0; }
+.forecast-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.forecast-card {
+    border: 1.5px solid #21d4fd77;
+    text-align: center;
+    min-width: 160px;
+    flex: 1 0 180px;
+}
+.forecast-date { font-weight: 600; color: #b721ff; }
+.forecast-icon { font-size: 1.6em; margin: 0.5em 0;}
+.forecast-temp { font-weight: bold; color: #4099e0; font-size: 1.1em;}
+/* Responsive */
+@media (max-width: 800px) {
+    .container, .crud-card, .crud-form, .crud-table { padding: 12px 5vw; }
+    .forecast-row { flex-direction: column; gap: 0.7em;}
+}

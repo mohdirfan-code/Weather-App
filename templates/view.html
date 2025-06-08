@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="crud-card">
+  <h2>Weather Record Details</h2>
+  <ul>
+    <li><b>ID:</b> {{ record.id }}</li>
+    <li><b>Location:</b> {{ record.resolved_location }}</li>
+    <li><b>Date Range:</b> {{ record.date_from }} to {{ record.date_to }}</li>
+    <li><b>Created At:</b> {{ record.created_at.strftime('%Y-%m-%d %H:%M') }}</li>
+  </ul>
+  {% macro weather_emoji(main) -%}
+    {% if main == 'Clear' %}
+      ☀️
+    {% elif main == 'Clouds' %}
+      ☁️
+    {% elif main == 'Rain' %}
+      🌧️
+    {% elif main == 'Drizzle' %}
+      🌦️
+    {% elif main == 'Thunderstorm' %}
+      ⛈️
+    {% elif main == 'Snow' %}
+      ❄️
+    {% elif main == 'Mist' or main == 'Fog' %}
+      🌫️
+    {% elif main == 'Smoke' %}
+      💨
+    {% elif main == 'Haze' %}
+      🌫️
+    {% elif main == 'Dust' %}
+      🌬️
+    {% elif main == 'Sand' %}
+      🏜️
+    {% elif main == 'Ash' %}
+      🌋
+    {% elif main == 'Squall' %}
+      🌬️
+    {% elif main == 'Tornado' %}
+      🌪️
+    {% else %}
+      🌡️
+    {% endif %}
+  {%- endmacro %}
+
+  {% if weather_data.current %}
+  <div class="weather-card">
+    <h3>Current Weather (at save time)</h3>
+    <div style="font-size:2em;margin-bottom:0.2em;">
+      {{ weather_emoji(weather_data.current.weather[0].main) }}
+    </div>
+    <div>
+      <b>{{ weather_data.current.weather[0].description.title() }}</b>, {{ weather_data.current.main.temp }}°C
+    </div>
+    <div>
+      Humidity: {{ weather_data.current.main.humidity }}% | Wind: {{ weather_data.current.wind.speed }} m/s
+    </div>
+  </div>
+  {% endif %}
+
+  {% if weather_data.forecast %}
+  <div>
+    <h3>Forecast ({{ record.date_from }} to {{ record.date_to }})</h3>
+    <div class="forecast-row">
+      {% for item in weather_data.forecast.list %}
+        {% set date_str = item.dt_txt.split(' ')[0] %}
+        {% if date_str >= record.date_from|string and date_str <= record.date_to|string %}
+        <div class="forecast-card {{ item.weather[0].main|lower }}">
+          <div class="forecast-date">{{ item.dt_txt }}</div>
+          <div class="forecast-icon" style="font-size:2em;">
+            {{ weather_emoji(item.weather[0].main) }}
+          </div>
+          <div class="forecast-desc">{{ item.weather[0].description.title() }}</div>
+          <div class="forecast-temp">{{ item.main.temp }}°C</div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Google Map Embed for Resolved Location -->
+  <div style="margin: 2em 0;">
+    <h3>Location Map</h3>
+    <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 4px 18px #4099e033;">
+      <iframe
+        width="100%"
+        height="320"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+        src="https://www.google.com/maps?q={{ record.resolved_location | urlencode }}&output=embed&markers={{ record.resolved_location | urlencode }}">
+      </iframe>
+    </div>
+  </div>
+
+  {% if youtube_videos %}
+    <div class="youtube-videos" style="display:flex; gap:18px; flex-wrap:wrap;">
+      {% for video in youtube_videos[:3] %}
+        {% if video.videoId %}
+          <div class="youtube-video" style="margin-bottom:18px; display:flex; flex-direction:column; align-items:center; width:320px;">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/{{ video.videoId }}" frameborder="0" allowfullscreen style="display:block;"></iframe>
+            <div style="width:100%; text-align:center; word-break:break-word; margin-top:4px;">
+              <span style="font-size:1em; font-weight:500;">{{ video.title }}</span>
+            </div>
+          </div>
+        {% else %}
+          <div style="width:320px;">No video available</div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <a href="{{ url_for('main.edit_record', record_id=record.id) }}" class="btn">Edit</a>
+  <a href="{{ url_for('main.list_records') }}" class="btn">Back to List</a>
+  <a href="{{ url_for('main.index') }}" class="btn">Back to Search</a>
+  <a href="{{ url_for('main.list_records') }}" class="btn">Go to Records</a>
+</div>
+{% endblock %}
+
+
+{% if youtube_videos is not defined %}
+  <div style="color:red;">youtube_videos variable is not defined in template.</div>
+{% endif %}
+{% if youtube_videos %}
+  <div style="color:green;">Found {{ youtube_videos|length }} YouTube videos.</div>
+{% else %}
+  <div style="color:orange;">No YouTube videos found for this location.</div>
+{% endif %}

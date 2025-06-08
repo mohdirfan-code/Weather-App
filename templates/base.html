@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App CRUD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+            position: relative;
+            margin-top: 15px;
+        }
+        .nav-btn {
+            padding: 7px 18px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            margin-right: 6px;
+            font-size: 1em;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .nav-btn:hover {
+            background: linear-gradient(90deg, #b721ff 10%, #21d4fd 90%);
+            transform: scale(1.05);
+        }
+        .info-link {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+            color: #2e4a62;
+            font-weight: bold;
+            padding: 7px 14px 7px 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .info-link:hover {
+            background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+            .info-link {
+                position: static;
+                align-self: flex-end;
+                margin-left: auto;
+                margin-top: 5px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('main.index') }}" class="nav-btn">Home</a>
+        <a href="{{ url_for('main.list_records') }}" class="nav-btn">Records (CRUD)</a>
+        <a href="{{ url_for('main.info') }}" title="About this app" class="info-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" style="vertical-align:middle;">
+            <circle cx="10" cy="10" r="9" fill="#21d4fd" />
+            <text x="10" y="15" text-anchor="middle" font-size="13" fill="#fff" font-family="Arial" font-weight="bold">i</text>
+            </svg>
+            Info
+        </a>
+    </nav>
+    <div class="container">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <ul class="flashes">
+          {% for category, message in messages %}
+            <li class="flash {{ category }}">{{ message }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

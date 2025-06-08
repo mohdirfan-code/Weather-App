@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="info-app">
+  <h2>About This Weather App</h2>
+  <div class="info-card">
+    <div class="info-main">
+      <p>
+        <b>This app</b> was built for the AI Engineer Technical Assessment.<br>
+        It demonstrates real-time weather search, persistence, API integration, and a dynamic UI.<br>
+        <br>
+        <b>Built by:</b> <span class="author">Mohd Irfan</span>
+      </p>
+      <hr>
+      <p>
+        <b>About Product Manager Accelerator (PMA):</b>
+        <br>
+        Product Manager Accelerator (PMA) is a global community and training platform supporting 
+        product managers at every stage of their careers. PMA provides hands-on bootcamps, career coaching, 
+        resume reviews, and leadership development programs to help you master product management skills, 
+        build real-world experience, and advance to senior roles.  
+      </p>
+      <a href="https://www.linkedin.com/school/pmaccelerator/" target="_blank" class="linkedin-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="22" height="22" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;"><rect width="24" height="24" fill="none"/><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.267c-.966 0-1.75-.783-1.75-1.749s.784-1.749 1.75-1.749c.965 0 1.75.783 1.75 1.749s-.785 1.749-1.75 1.749zm15.5 11.267h-3v-5.604c0-1.337-.026-3.062-1.871-3.062-1.873 0-2.159 1.462-2.159 2.973v5.693h-3v-10h2.881v1.367h.041c.401-.76 1.379-1.561 2.84-1.561 3.037 0 3.599 2.001 3.599 4.601v5.593z"/></svg>
+        Visit PMA on LinkedIn
+      </a>
+      <br><br>
+      <p class="note">
+        <span>Learn more about PMA and opportunities at their <a href="https://www.linkedin.com/school/pmaccelerator/" target="_blank">LinkedIn page</a>.</span>
+      </p>
+    </div>
+  </div>
+</div>
+<style>
+body {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0f2027, #2c5364, #f7971e, #ffd200, #21d4fd, #b721ff, #ff6a00);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0% 50%;}
+}
+.info-app {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 22px;
+  box-shadow: 0 10px 36px #0003;
+  padding: 2.2em 2.5em 2.5em 2.5em;
+}
+h2 {
+  text-align: center;
+  color: #2e4a62;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.info-card {
+  background: linear-gradient(100deg, #dbeafe 70%, #e6f7d2 100%);
+  border-radius: 17px;
+  padding: 28px 32px 20px 32px;
+  box-shadow: 0 6px 22px #0002;
+  text-align: center;
+  font-size: 1.08em;
+}
+.author {
+  color: #b721ff; font-weight: bold; font-size: 1.1em; letter-spacing: 0.5px;
+}
+.linkedin-btn {
+  background: linear-gradient(90deg,#0077b5 40%,#21d4fd 100%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 32px;
+  padding: 11px 32px;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 16px 0 8px 0;
+  box-shadow: 0 4px 16px #21d4fd44;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+}
+.linkedin-btn:hover {
+  background: linear-gradient(90deg,#21d4fd 0%,#0077b5 90%);
+  transform: scale(1.06);
+  box-shadow: 0 7px 32px #0077b555;
+  color: #fff;
+}
+.note {
+  color: #2e4a62;
+  font-size: 0.95em;
+  margin-top: 12px;
+}
+@media (max-width: 700px) {
+  .info-app { padding: 1em 0.2em; }
+  .info-card { padding: 16px 6px; }
+}
+</style>
+{% endblock %}

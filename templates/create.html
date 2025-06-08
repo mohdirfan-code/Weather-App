@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="crud-card">
+  <h2>Add New Weather Record</h2>
+  <form method="POST" class="crud-form">
+    <label>Location:</label>
+    <input type="text" name="location_input" required>
+    <label>Date From:</label>
+    <input type="date" name="date_from" required>
+    <label>Date To:</label>
+    <input type="date" name="date_to" required>
+    <button type="submit" class="btn main-btn">Save</button>
+    <a href="{{ url_for('main.list_records') }}" class="btn">Cancel</a>
+    <a href="{{ url_for('main.index') }}" class="btn">Back to Search</a>
+    <a href="{{ url_for('main.list_records') }}" class="btn">Go to Records</a>
+  </form>
+</div>
+{% endblock %}

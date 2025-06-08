@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .records-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5em;
+        }
+        .records-table th, .records-table td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        .records-table th {
+            background: #f8f8f8;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #2874A6;
+            color: #fff;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 2px 2px;
+            transition: background 0.2s;
+        }
+        .btn:hover, .btn:focus {
+            background: #145374;
+        }
+        .btn-danger {
+            background: #c0392b;
+        }
+        .btn-danger:hover, .btn-danger:focus {
+            background: #922B21;
+        }
+        .btn-group {
+            display: flex;
+            gap: 0.3em;
+            justify-content: center;
+        }
+        .export-group {
+            margin: 1em 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+        }
+        .top-actions {
+            margin-bottom: 1em;
+            display: flex;
+            gap: 0.5em;
+        }
+        .alert-success {
+            background: #e6ffed;
+            color: #256029;
+            border: 1px solid #b7eb8f;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Saved Weather Records</h2>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="alert-{{ category }}">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="top-actions">
+        <a href="{{ url_for('main.create_record') }}" class="btn">Add New</a>
+        <a href="{{ url_for('main.index') }}" class="btn">Back to Search</a>
+    </div>
+
+    <div class="export-group">
+        <b>Export All Records:</b>
+        <a href="{{ url_for('main.export_json') }}" class="btn">Export JSON</a>
+        <a href="{{ url_for('main.export_csv') }}" class="btn">Export CSV</a>
+        <a href="{{ url_for('main.export_xml') }}" class="btn">Export XML</a>
+        <a href="{{ url_for('main.export_markdown') }}" class="btn">Export Markdown</a>
+        <a href="{{ url_for('main.export_pdf') }}" class="btn">Export PDF</a>
+    </div>
+
+    <table class="records-table">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>ID</th>
+          <th>Location</th>
+          <th>Date Range</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rec in records %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ rec.id }}</td>
+          <td>{{ rec.resolved_location }}</td>
+          <td>{{ rec.date_from }} to {{ rec.date_to }}</td>
+          <td>{{ rec.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+          <td>
+            <div class="btn-group">
+              <a href="{{ url_for('main.view_record', record_id=rec.id) }}" class="btn">View</a>
+              <a href="{{ url_for('main.edit_record', record_id=rec.id) }}" class="btn">Edit</a>
+              <form method="POST" action="{{ url_for('main.delete_record', record_id=rec.id) }}" style="display:inline;" onsubmit="return confirm('Delete this record?');">
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</body>
+</html>
