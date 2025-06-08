@@ -213,7 +213,8 @@ flask run
 
 ## 🌐 About Product Manager Accelerator (PMA)
 
-**Product Manager Accelerator (PMA)** is a global community and training platform dedicated to empowering aspiring and experienced product managers. PMA offers hands-on bootcamps, career coaching, resume reviews, and leadership programs, helping professionals master PM skills and advance their careers.  
+> **Product Manager Accelerator (PMA)** is a premier training and internship platform for aspiring product managers and AI engineers.  
+> PMA offers hands-on projects, mentorship from industry leaders, and a direct pathway to launching your PM/AI career.
 Learn more at [pmaccelerator.io](https://www.pmaccelerator.io/) or visit their [LinkedIn page](https://www.linkedin.com/company/product-manager-accelerator/).
 ---
 
