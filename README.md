@@ -211,20 +211,17 @@ flask run
 
 ---
 
-## 🌐 About the Product Manager Accelerator (PMA)
+## 🌐 About Product Manager Accelerator (PMA)
 
-> **Product Manager Accelerator (PMA)** is a premier training and internship platform for aspiring product managers and AI engineers.  
-> PMA offers hands-on projects, mentorship from industry leaders, and a direct pathway to launching your PM/AI career.
->
-> [Learn more on LinkedIn](https://www.linkedin.com/company/product-manager-accelerator/)
-
+**Product Manager Accelerator (PMA)** is a global community and training platform dedicated to empowering aspiring and experienced product managers. PMA offers hands-on bootcamps, career coaching, resume reviews, and leadership programs, helping professionals master PM skills and advance their careers.  
+Learn more at [pmaccelerator.io](https://www.pmaccelerator.io/) or visit their [LinkedIn page](https://www.linkedin.com/company/product-manager-accelerator/).
 ---
 
 ## 📇 Contact
 
 - **Author:** Irfan
 - **Email:** mohdirfanwork786@gmail.com
-- **LinkedIn:** [irfan786msfri](https://www.linkedin.com/in/irfan786msfri/)
+- **LinkedIn:** [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/)
 - **Project Issues:** [Submit an Issue](https://github.com/mohdirfan-code/weather-app/issues)
 
 ---
