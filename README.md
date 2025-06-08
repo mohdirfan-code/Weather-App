@@ -9,6 +9,8 @@ _Fullstack AI/ML Software Engineer Project_
 
 This repository hosts the **Weather App**, a robust full-stack application designed to provide real-time weather data and air quality information for any location—using a modern, user-friendly interface and a scalable, extensible backend.
 
+**Both Technical Assessment #1 (Core Weather App) and #2 (Advanced Features & CRUD) are fully completed and demonstrated in this project.**
+
 Built as part of an AI/ML Software Engineer technical assessment, this project demonstrates best practices in API design, user input handling, data validation, database CRUD operations, and optional integrations with third-party platforms (e.g., YouTube, Google Maps).
 
 > **Key Value:**  
