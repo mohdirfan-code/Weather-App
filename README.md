@@ -225,7 +225,8 @@ Learn more at [pmaccelerator.io](https://www.pmaccelerator.io/) or visit their [
 - **Author:** Irfan
 - **Email:** mohdirfanwork786@gmail.com
 - **LinkedIn:** [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/)
-- **Project Issues:** [Submit an Issue](https://github.com/mohdirfan-code/weather-app/issues)
+- **GitHub:** [mohdirfan-code](https://github.com/mohdirfan-code)
+- **Twitter/X:** [@Irfu6428](https://x.com/Irfu6428)
 
 ---
 
