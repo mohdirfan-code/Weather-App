@@ -75,12 +75,12 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 
 > _Paste your working app images or GIFs here for maximum engagement!_
 >
-> ![Home Page](./assets/screenshot-home.png)
-> ![Search Result](./assets/screenshot-weather.png)
-> ![Records (CRUD)](./assets/screenshot-records.png)
-> ![Air Quality](./assets/screenshot-air-quality.png)
-> ![Data Export](./assets/screenshot-export.png)
-
+> ![Home Page](![Image](https://github.com/user-attachments/assets/1afa06b3-a0bc-4320-9742-5017848e07f8))
+> ![Search Result](![Image](https://github.com/user-attachments/assets/ea56b5c4-7996-48ae-aea4-b5bc1ed714ab))
+> ![Air Quality](![Image](https://github.com/user-attachments/assets/217982ea-1937-46c0-8307-37c11ef67288))
+> ![Google Location & Youtube Videos](![Image](https://github.com/user-attachments/assets/3c2c1985-66f8-4a0c-b31f-c179b2687c83))
+> ![Records (CRUD)](![Image](https://github.com/user-attachments/assets/f1a9c705-03a4-4845-8f86-41c474d80be1))
+> ![Info Page](![Image](https://github.com/user-attachments/assets/e9c7d5f1-2d7e-4c34-ab76-221c0c538d36))
 ---
 
 ## 🏗️ Project Structure
@@ -201,7 +201,7 @@ flask run
 | API integration (YouTube, Maps)      | ✅           | YouTube and Google Maps                  |
 | Info button (PMA description)        | ✅           | Linked to PMA LinkedIn                   |
 | Error handling & validation          | ✅           | All user input & API errors handled      |
-| Demo video                           | ➡️           | [Add your demo video link below]         |
+| Demo video                           | ✅          | [Demo video link](https://vimeo.com/1091594885/d1d869631a?share=copy)         |
 
 ---
 
@@ -209,7 +209,7 @@ flask run
 
 > _Embed your screencast or YouTube demo link below for reviewers and LinkedIn viewers:_
 >
-> [![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://your-demo-link.com)
+> 📹 [Watch Demo on Vimeo](https://vimeo.com/1091594885/d1d869631a?share=copy)
 
 ---
 
@@ -225,7 +225,8 @@ Learn more at [pmaccelerator.io](https://www.pmaccelerator.io/) or visit their [
 - **Author:** Irfan
 - **Email:** mohdirfanwork786@gmail.com
 - **LinkedIn:** [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/)
-- **Project Issues:** [Submit an Issue](https://github.com/mohdirfan-code/weather-app/issues)
+- **GitHub:** [mohdirfan-code](https://github.com/mohdirfan-code)
+- **Twitter/X:** [@Irfu6428](https://x.com/Irfu6428)
 
 ---
 
