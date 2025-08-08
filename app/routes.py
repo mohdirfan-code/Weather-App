@@ -351,7 +351,7 @@ def export_pdf():
     out.seek(0)
     return send_file(out, mimetype='application/pdf', as_attachment=True, download_name='weather_records.pdf')
 
-@app.route('/create-db')
+@main_bp.route("/create-db")
 def create_db():
     if os.environ.get("FLASK_ENV") == "development":
         db.create_all()
