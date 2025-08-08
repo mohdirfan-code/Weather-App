@@ -353,8 +353,6 @@ def export_pdf():
 
 @main_bp.route("/create-db")
 def create_db():
-    if os.environ.get("FLASK_ENV") == "development":
-        db.create_all()
-        return "Database created!"
-    return "Not allowed.", 403
+    db.create_all()
+    return "✅ Database tables created successfully!"
 
