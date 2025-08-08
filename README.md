@@ -54,7 +54,7 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
   All features are open for demonstration and review.
 
 - **Info Button:**  
-  Get to Know about the project and me [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/) from within the app.
+  Learn more about the project and about me, [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/), from the Info page.
 
 ---
 
@@ -86,7 +86,7 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 ![Records (CRUD)](https://github.com/user-attachments/assets/f1a9c705-03a4-4845-8f86-41c474d80be1)  
 
 **Info Page**
-![Info Page](<img width="1896" height="945" alt="Image" src="https://github.com/user-attachments/assets/2b94b4f9-77f9-4a33-b674-474f2ccabb91" />)  
+![Info Page](https://github.com/user-attachments/assets/918a2e9f-533f-40f2-b281-576e445f6819)  
 
 ---
 
