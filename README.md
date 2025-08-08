@@ -1,15 +1,13 @@
 # 🌦️ Weather App — Real-Time Weather, Forecast & Air Quality Platform
 
 **Created by Irfan**  
-_Fullstack AI/ML Software Engineer Project_
+_Fullstack AI/ML Project_
 
 ---
 
 ## 🚀 Project Overview
 
 This repository hosts the **Weather App**, a robust full-stack application designed to provide real-time weather data and air quality information for any location—using a modern, user-friendly interface and a scalable, extensible backend.
-
-**Both Technical Assessment #1 (Core Weather App) and #2 (Advanced Features & CRUD) are fully completed and demonstrated in this project.**
 
 Built as part of an AI/ML Software Engineer technical assessment, this project demonstrates best practices in API design, user input handling, data validation, database CRUD operations, and optional integrations with third-party platforms (e.g., YouTube, Google Maps).
 
@@ -56,7 +54,7 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
   All features are open for demonstration and review.
 
 - **Info Button:**  
-  Learn about the [Product Manager Accelerator (PMA)](https://www.linkedin.com/company/product-manager-accelerator/) from within the app.
+  Get to Know about the project and me [Mohd Irfan](https://www.linkedin.com/in/irfan786msfri/) from within the app.
 
 ---
 
@@ -88,7 +86,7 @@ Built as part of an AI/ML Software Engineer technical assessment, this project d
 ![Records (CRUD)](https://github.com/user-attachments/assets/f1a9c705-03a4-4845-8f86-41c474d80be1)  
 
 **Info Page**
-![Info Page](https://github.com/user-attachments/assets/e9c7d5f1-2d7e-4c34-ab76-221c0c538d36)  
+![Info Page](<img width="1896" height="945" alt="Image" src="https://github.com/user-attachments/assets/2b94b4f9-77f9-4a33-b674-474f2ccabb91" />)  
 
 ---
 
@@ -196,37 +194,12 @@ flask run
 
 ---
 
-## 📝 Assessment Requirements Mapping
-
-| Requirement                         | Implemented? | Notes                                    |
-| ------------------------------------ | ------------ | ---------------------------------------- |
-| User-friendly location input         | ✅           | Supports city, zip, coords, landmarks    |
-| Real API weather data                | ✅           | OpenWeatherMap integration               |
-| Air Quality Data                     | ✅           | OpenWeatherMap AQI API                   |
-| 5-day forecast                       | ✅           | Shown with icons and summary             |
-| Current location support             | ✅           | Uses browser geolocation                 |
-| CRUD (Create, Read, Update, Delete)  | ✅           | All operations with validation           |
-| Data export (JSON, CSV, XML, PDF)    | ✅           | Multiple formats supported               |
-| API integration (YouTube, Maps)      | ✅           | YouTube and Google Maps                  |
-| Info button (PMA description)        | ✅           | Linked to PMA LinkedIn                   |
-| Error handling & validation          | ✅           | All user input & API errors handled      |
-| Demo video                           | ✅          | [Demo video link](https://vimeo.com/1091614971/790150541a?share=copy)         |
-
----
-
 ## 📹 Demo Video
 
 > _Embed your screencast or YouTube demo link below for reviewers and LinkedIn viewers:_
 >
 > 📹 [Watch Demo on Vimeo](https://vimeo.com/1091614971/790150541a?share=copy)
 
----
-
-## 🌐 About Product Manager Accelerator (PMA)
-
-> **Product Manager Accelerator (PMA)** is a premier training and internship platform for aspiring product managers and AI engineers.  
-> PMA offers hands-on projects, mentorship from industry leaders, and a direct pathway to launching your PM/AI career.
-Learn more at [pmaccelerator.io](https://www.pmaccelerator.io/) or visit their [LinkedIn page](https://www.linkedin.com/company/product-manager-accelerator/).
 ---
 
 ## 📇 Contact
