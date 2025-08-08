@@ -5,3 +5,4 @@ __pycache__/
 *.pyo
 *.sqlite3
 .DS_Store
+instance/weather_app.db
